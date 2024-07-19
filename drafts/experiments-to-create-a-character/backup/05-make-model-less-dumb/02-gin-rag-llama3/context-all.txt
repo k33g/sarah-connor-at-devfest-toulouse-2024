@@ -1,0 +1,70 @@
+
+NAME: La Muse
+COUNTRY: France
+CITY: Marseille
+DESCRIPTION: La Muse is a French gin that combines traditional gin-making techniques with modern flavors and aromas. It's made with a blend of botanicals, including lavender, rosemary, and lemon.
+FLAVOR: Citrusy, herbal
+TASTE: Crisp, refreshing
+------
+NAME: G'Vine Floraison
+COUNTRY: France
+CITY: Provence
+DESCRIPTION: G'Vine Floraison is a French gin that uses a unique blend of botanicals, including vine flowers, to create a floral and slightly sweet flavor profile.
+FLAVOR: Floral, slightly sweet
+TASTE: Delicate, refreshing
+------
+NAME: Dupont Gin
+COUNTRY: France
+CITY: Paris
+DESCRIPTION: Dupont Gin is a French gin that uses a blend of traditional and modern botanicals to create a crisp, refreshing flavor profile.
+FLAVOR: Citrusy, herbal
+TASTE: Crisp, refreshing
+------
+NAME: Maison Villevert Gin
+COUNTRY: France
+CITY: Lyon
+DESCRIPTION: Maison Villevert Gin is a French gin that uses a blend of traditional and modern botanicals to create a smooth, creamy flavor profile.
+FLAVOR: Smooth, creamy
+TASTE: Silky, rich
+------
+NAME: Cîroc Gin
+COUNTRY: France
+CITY: Versailles
+DESCRIPTION: Cîroc Gin is a French gin that uses a blend of traditional and modern botanicals to create a crisp, refreshing flavor profile.
+FLAVOR: Citrusy, herbal
+TASTE: Crisp, refreshing
+------
+NAME: La Grande Maison
+COUNTRY: France
+CITY: Bordeaux
+DESCRIPTION: La Grande Maison is a French gin that uses a blend of traditional and modern botanicals to create a rich, complex flavor profile.
+FLAVOR: Rich, complex
+TASTE: Silky, rich
+------
+NAME: G.H. Mumm Gin
+COUNTRY: France
+CITY: Reims
+DESCRIPTION: G.H. Mumm Gin is a French gin that uses a blend of traditional and modern botanicals to create a crisp, refreshing flavor profile.
+FLAVOR: Citrusy, herbal
+TASTE: Crisp, refreshing
+------
+NAME: Dubouchy Gin
+COUNTRY: France
+CITY: Lyon
+DESCRIPTION: Dubouchy Gin is a French gin that uses a blend of traditional and modern botanicals to create a smooth, creamy flavor profile.
+FLAVOR: Smooth, creamy
+TASTE: Silky, rich
+------
+NAME: Boulard Gin
+COUNTRY: France
+CITY: Normandy
+DESCRIPTION: Boulard Gin is a French gin that uses a blend of traditional and modern botanicals to create a rich, complex flavor profile.
+FLAVOR: Rich, complex
+TASTE: Silky, rich
+------
+NAME: Dupont Gin
+COUNTRY: France
+CITY: Normandy
+DESCRIPTION: Dupont Gin is a French gin that uses a blend of traditional and modern botanicals to create a smooth, creamy flavor profile.
+FLAVOR: Smooth, creamy
+TASTE: Silky, rich
