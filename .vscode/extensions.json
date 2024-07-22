@@ -4,6 +4,7 @@
       "pkief.material-product-icons",
       "aaron-bond.better-comments",
       "equinusocio.vsc-material-theme",
-      "vallyscode.crayons"
+      "vallyscode.crayons",
+      "irongeek.vscode-env"
     ]
 }
