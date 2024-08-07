@@ -47,6 +47,8 @@ func main() {
 	//fmt.Println(fullAnswer.Message.Role)
 	//fmt.Println(fullAnswer.Message.Content)
 
+	fmt.Println()
+
 	if err != nil {
 		log.Fatal("😡:", err)
 	}
