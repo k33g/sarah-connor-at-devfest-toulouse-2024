@@ -1,0 +1,1 @@
+I want the list of all Terminator Models with their characteristics, Specifications, strength and weakness in JSON. For each model I want five characteristic quotes that the model could say. I want the models from all the terminator franchises (films and series)

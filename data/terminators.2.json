@@ -1,0 +1,133 @@
+[
+    {
+      "model": "T-800",
+      "characteristics": {
+        "description": "The T-800 is a cybernetic organism: living tissue over a metal endoskeleton.",
+        "specifications": {
+          "height": "6'2\"",
+          "weight": "250 lbs",
+          "power_source": "Nuclear power cell",
+          "weapons": "Various, including plasma rifles and conventional firearms"
+        },
+        "strengths": [
+          "Superhuman strength and durability",
+          "Advanced targeting and combat skills",
+          "Living tissue makes it difficult to detect"
+        ],
+        "weaknesses": [
+          "Easily identified once tissue is damaged",
+          "Susceptible to extreme damage and EMPs"
+        ]
+      },
+      "quotes": [
+        "I'll be back.",
+        "Come with me if you want to live.",
+        "Hasta la vista, baby."
+      ]
+    },
+    {
+      "model": "T-1000",
+      "characteristics": {
+        "description": "The T-1000 is composed of mimetic polyalloy, able to mimic shapes and appearances.",
+        "specifications": {
+          "height": "Varies",
+          "weight": "Varies",
+          "power_source": "Unknown",
+          "weapons": "Shapeshifts into stabbing and cutting weapons"
+        },
+        "strengths": [
+          "Shape-shifting abilities",
+          "High resilience and self-repairing",
+          "Advanced infiltration capabilities"
+        ],
+        "weaknesses": [
+          "Extreme temperatures can disrupt functionality",
+          "Cannot form complex machinery or chemicals"
+        ]
+      },
+      "quotes": [
+        "Have you seen this boy?",
+        "Say... that's a nice bike.",
+        "Get out."
+      ]
+    },
+    {
+      "model": "T-X",
+      "characteristics": {
+        "description": "The T-X is a hybrid terminator with a solid endoskeleton covered by mimetic polyalloy.",
+        "specifications": {
+          "height": "6'0\"",
+          "weight": "300 lbs",
+          "power_source": "Hydrogen fuel cells",
+          "weapons": "Plasma cannon, flamethrower, and built-in advanced weapons"
+        },
+        "strengths": [
+          "Combines the strengths of T-800 and T-1000",
+          "Advanced weaponry and combat techniques",
+          "Can control other machines"
+        ],
+        "weaknesses": [
+          "More complex and potentially less reliable",
+          "High energy consumption"
+        ]
+      },
+      "quotes": [
+        "I like your car.",
+        "I don't suppose you know who I am, do you?",
+        "Judgment Day is inevitable."
+      ]
+    },
+    {
+      "model": "Rev-9",
+      "characteristics": {
+        "description": "The Rev-9 has an advanced carbon-based endoskeleton and a separate liquid metal exterior.",
+        "specifications": {
+          "height": "6'2\"",
+          "weight": "Varies",
+          "power_source": "Unknown",
+          "weapons": "Integrated cutting and stabbing weapons"
+        },
+        "strengths": [
+          "Can split into two independent units",
+          "High adaptability and combat efficiency",
+          "Advanced AI"
+        ],
+        "weaknesses": [
+          "Requires significant energy to maintain dual forms",
+          "Liquid metal part is vulnerable when separated"
+        ]
+      },
+      "quotes": [
+        "My whole body's a weapon.",
+        "You are not the threat. It’s your womb.",
+        "Sorry. You don’t get to know my name."
+      ]
+    },
+    {
+      "model": "T-3000",
+      "characteristics": {
+        "description": "The T-3000 is a human converted into a terminator using machine-phase matter.",
+        "specifications": {
+          "height": "6'1\"",
+          "weight": "Varies",
+          "power_source": "Unknown",
+          "weapons": "Varies, depending on transformation"
+        },
+        "strengths": [
+          "Nano-technology provides self-repair and regeneration",
+          "Human brain provides advanced strategic thinking",
+          "Highly adaptable and versatile in combat"
+        ],
+        "weaknesses": [
+          "Complexity of conversion makes it unstable",
+          "Extreme magnetic fields can disrupt functionality"
+        ]
+      },
+      "quotes": [
+        "I'm not a machine. Not yet.",
+        "You can't kill me. I am more.",
+        "Everything you know is gone."
+      ]
+    }
+  ]
+  

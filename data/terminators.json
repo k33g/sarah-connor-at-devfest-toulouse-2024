@@ -1,0 +1,178 @@
+{
+    "TerminatorModels": [
+      {
+        "model": "T-1",
+        "characteristics": {
+          "height": "5 ft",
+          "weight": "1,000 lbs",
+          "material": "Metal",
+          "appearance": "Tracked robot with dual miniguns"
+        },
+        "specifications": {
+          "weaponry": "Dual miniguns",
+          "mobility": "Tracked",
+          "intelligence": "Low",
+          "power_source": "Unknown"
+        },
+        "strengths": [
+          "High firepower",
+          "Durable"
+        ],
+        "weaknesses": [
+          "Limited mobility",
+          "Low intelligence",
+          "Vulnerable to hacking"
+        ]
+      },
+      {
+        "model": "T-600",
+        "characteristics": {
+          "height": "6 ft",
+          "weight": "800 lbs",
+          "material": "Rubber skin over metal endoskeleton",
+          "appearance": "Human-like but less realistic"
+        },
+        "specifications": {
+          "weaponry": "Varied (firearms, melee weapons)",
+          "mobility": "Bipedal",
+          "intelligence": "Moderate",
+          "power_source": "Unknown"
+        },
+        "strengths": [
+          "Strong and durable",
+          "Better disguise than T-1"
+        ],
+        "weaknesses": [
+          "Unrealistic appearance",
+          "Less advanced than T-800",
+          "Vulnerable to detection"
+        ]
+      },
+      {
+        "model": "T-800",
+        "characteristics": {
+          "height": "6 ft",
+          "weight": "800 lbs",
+          "material": "Living tissue over metal endoskeleton",
+          "appearance": "Realistic human appearance"
+        },
+        "specifications": {
+          "weaponry": "Varied (firearms, melee weapons)",
+          "mobility": "Bipedal",
+          "intelligence": "High",
+          "power_source": "Nuclear power cell"
+        },
+        "strengths": [
+          "Highly realistic disguise",
+          "Very durable",
+          "High combat efficiency"
+        ],
+        "weaknesses": [
+          "Limited to physical combat",
+          "Requires maintenance of living tissue",
+          "Detectable by advanced sensors"
+        ]
+      },
+      {
+        "model": "T-1000",
+        "characteristics": {
+          "height": "Varies",
+          "weight": "Varies",
+          "material": "Mimetic polyalloy (liquid metal)",
+          "appearance": "Can mimic any human or object of similar size"
+        },
+        "specifications": {
+          "weaponry": "Bladed arms, can mimic small firearms",
+          "mobility": "Shape-shifting",
+          "intelligence": "Very high",
+          "power_source": "Unknown"
+        },
+        "strengths": [
+          "Extreme adaptability",
+          "High durability",
+          "Stealth and infiltration capabilities"
+        ],
+        "weaknesses": [
+          "Vulnerable to extreme temperatures",
+          "Cannot form complex machines",
+          "Damage can temporarily disrupt shape-shifting"
+        ]
+      },
+      {
+        "model": "T-X",
+        "characteristics": {
+          "height": "Varies",
+          "weight": "Varies",
+          "material": "Endoskeleton covered in mimetic polyalloy",
+          "appearance": "Can mimic any human or object of similar size"
+        },
+        "specifications": {
+          "weaponry": "Plasma cannon, flamethrower, bladed weapons",
+          "mobility": "Shape-shifting",
+          "intelligence": "Very high",
+          "power_source": "Unknown"
+        },
+        "strengths": [
+          "Combination of T-800 and T-1000 abilities",
+          "Advanced weaponry",
+          "High combat and infiltration capabilities"
+        ],
+        "weaknesses": [
+          "Vulnerable to magnetic fields",
+          "Complexity can lead to system failures",
+          "Extremely advanced but rare"
+        ]
+      },
+      {
+        "model": "T-3000",
+        "characteristics": {
+          "height": "Varies",
+          "weight": "Varies",
+          "material": "Machine-phase matter",
+          "appearance": "Can mimic any human or object of similar size"
+        },
+        "specifications": {
+          "weaponry": "Varied (melee and ranged)",
+          "mobility": "Shape-shifting",
+          "intelligence": "Extremely high",
+          "power_source": "Unknown"
+        },
+        "strengths": [
+          "Near-indestructible",
+          "Highly adaptable",
+          "Extremely intelligent"
+        ],
+        "weaknesses": [
+          "Extreme heat can cause temporary disruption",
+          "Complex and rare",
+          "High energy consumption"
+        ]
+      },
+      {
+        "model": "Rev-9",
+        "characteristics": {
+          "height": "Varies",
+          "weight": "Varies",
+          "material": "Endoskeleton and liquid metal exterior",
+          "appearance": "Can mimic any human or object of similar size"
+        },
+        "specifications": {
+          "weaponry": "Varied (melee and ranged)",
+          "mobility": "Shape-shifting",
+          "intelligence": "Extremely high",
+          "power_source": "Unknown"
+        },
+        "strengths": [
+          "Can split into two separate units",
+          "Highly adaptable",
+          "Extreme combat capabilities"
+        ],
+        "weaknesses": [
+          "Extreme heat can cause temporary disruption",
+          "Complex and rare",
+          "High energy consumption"
+        ]
+      }
+    ]
+  }
+  
