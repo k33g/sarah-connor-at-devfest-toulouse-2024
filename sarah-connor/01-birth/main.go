@@ -20,7 +20,7 @@ func main() {
 	userContent := `What is your name? How can you save the world?`
 
 
-	options := gollama.Options{
+	options := o.Options{
 		Temperature: 0.5, // default (0.8)
 		RepeatLastN: 2,   // default (64) the default value will "freeze" deepseek-coder
 	}

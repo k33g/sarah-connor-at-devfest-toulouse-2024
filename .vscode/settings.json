@@ -1,13 +1,29 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Catppuccin Macchiato",
-    "editor.fontSize": 15,
-    "terminal.integrated.fontSize": 17,
+    "workbench.colorTheme": "Gitpod Light",
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 18,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "editor.detectIndentation": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
-    "editor.fontFamily": "Menlo",
-
+    "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.fontWeight": "normal",
+        "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
+        "editor.fontSize": 16,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
+    },
+    "markdown.preview.fontSize": 30,
+    "workbench.editorAssociations": {
+        "*.md": "vscode.markdown.preview.editor"
+    }
 }

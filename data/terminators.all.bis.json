@@ -1,0 +1,236 @@
+{
+    "terminator_models": [
+      {
+        "model": "T-800",
+        "characteristics": {
+          "series": "The Terminator, Terminator 2: Judgment Day, Terminator 3: Rise of the Machines",
+          "manufacturer": "Skynet",
+          "year_of_creation": "2026",
+          "role": "Infiltration, assassination"
+        },
+        "specifications": {
+          "endoskeleton": "Hyperalloy combat chassis",
+          "power_source": "Nuclear power cell",
+          "armament": "Various firearms, melee combat",
+          "intelligence": "High, capable of learning"
+        },
+        "strengths": [
+          "Durable endoskeleton",
+          "High strength and combat abilities",
+          "Advanced infiltration techniques",
+          "Self-healing capabilities"
+        ],
+        "weaknesses": [
+          "Vulnerable to extreme heat and damage",
+          "Limited emotional understanding",
+          "Requires maintenance and power source replacement"
+        ],
+        "quotes": [
+          "I'll be back.",
+          "Come with me if you want to live.",
+          "Hasta la vista, baby.",
+          "I need your clothes, your boots, and your motorcycle.",
+          "No problemo."
+        ]
+      },
+      {
+        "model": "T-1000",
+        "characteristics": {
+          "series": "Terminator 2: Judgment Day",
+          "manufacturer": "Skynet",
+          "year_of_creation": "2029",
+          "role": "Advanced infiltration, assassination"
+        },
+        "specifications": {
+          "endoskeleton": "Mimetic polyalloy (liquid metal)",
+          "power_source": "Unknown",
+          "armament": "Shape-shifting, various melee weapons formed from body",
+          "intelligence": "Very high, highly adaptive"
+        },
+        "strengths": [
+          "Shape-shifting abilities",
+          "High intelligence and adaptability",
+          "Self-repair capabilities",
+          "Infiltration and disguise expertise"
+        ],
+        "weaknesses": [
+          "Vulnerable to extreme temperatures (e.g., liquid nitrogen)",
+          "Less durable against high-energy weapons",
+          "Limited to simple forms and weapons"
+        ],
+        "quotes": [
+          "Have you seen this boy?",
+          "I know this hurts, call to John now!",
+          "Say... that's a nice bike.",
+          "You could be useful in my mission.",
+          "My mission is to protect you."
+        ]
+      },
+      {
+        "model": "T-X",
+        "characteristics": {
+          "series": "Terminator 3: Rise of the Machines",
+          "manufacturer": "Skynet",
+          "year_of_creation": "2032",
+          "role": "Infiltration, combat, extermination"
+        },
+        "specifications": {
+          "endoskeleton": "Hyperalloy combat chassis with liquid metal skin",
+          "power_source": "Nuclear power cell",
+          "armament": "Plasma cannon, flamethrower, nanotechnology",
+          "intelligence": "Very high, advanced combat tactics"
+        },
+        "strengths": [
+          "Combination of solid endoskeleton and liquid metal",
+          "Advanced weaponry",
+          "Superior combat skills",
+          "Nanotechnology for repairing and controlling machines"
+        ],
+        "weaknesses": [
+          "Still vulnerable to massive physical damage",
+          "Dependent on power cell",
+          "Susceptible to powerful electromagnetic pulses (EMP)"
+        ],
+        "quotes": [
+          "I'm your future.",
+          "Resistance is futile.",
+          "Target acquired.",
+          "You cannot escape.",
+          "Mission: Terminate."
+        ]
+      },
+      {
+        "model": "T-3000",
+        "characteristics": {
+          "series": "Terminator Genisys",
+          "manufacturer": "Skynet",
+          "year_of_creation": "2029",
+          "role": "Infiltration, combat, conversion"
+        },
+        "specifications": {
+          "endoskeleton": "Molecularly bonded mimetic polyalloy",
+          "power_source": "Unknown",
+          "armament": "Shape-shifting, enhanced strength and durability",
+          "intelligence": "Extremely high, nanomachine control"
+        },
+        "strengths": [
+          "Superior molecular structure",
+          "Shape-shifting and regeneration",
+          "Nanomachine integration",
+          "High resistance to damage"
+        ],
+        "weaknesses": [
+          "Vulnerable to magnetic fields",
+          "Complex internal structure can be disrupted",
+          "Dependent on nanomachines for form and function"
+        ],
+        "quotes": [
+          "You think you're safe? You're not.",
+          "I've come a long way for this.",
+          "I will find you.",
+          "The future is ours.",
+          "You cannot hide."
+        ]
+      },
+      {
+        "model": "T-850",
+        "characteristics": {
+          "series": "Terminator 3: Rise of the Machines",
+          "manufacturer": "Skynet",
+          "year_of_creation": "2029",
+          "role": "Infiltration, combat"
+        },
+        "specifications": {
+          "endoskeleton": "Reinforced combat chassis",
+          "power_source": "Hydrogen fuel cells",
+          "armament": "Various firearms, melee combat",
+          "intelligence": "High, programmed for advanced combat"
+        },
+        "strengths": [
+          "Enhanced strength and durability",
+          "Improved power source and endurance",
+          "Advanced combat programming",
+          "Self-healing capabilities"
+        ],
+        "weaknesses": [
+          "Limited emotional understanding",
+          "Vulnerable to extreme damage",
+          "Requires maintenance and power source replacement"
+        ],
+        "quotes": [
+          "I'm back.",
+          "The mission is to protect you.",
+          "You are terminated.",
+          "This is the end of the line.",
+          "Prepare to be reprogrammed."
+        ]
+      },
+      {
+        "model": "Cameron Phillips (TOK715)",
+        "characteristics": {
+          "series": "Terminator: The Sarah Connor Chronicles",
+          "manufacturer": "Skynet",
+          "year_of_creation": "2027",
+          "role": "Infiltration, protection"
+        },
+        "specifications": {
+          "endoskeleton": "Advanced hyperalloy combat chassis",
+          "power_source": "Nuclear power cell",
+          "armament": "Various firearms, melee combat",
+          "intelligence": "Very high, capable of learning and adapting"
+        },
+        "strengths": [
+          "Highly durable endoskeleton",
+          "Advanced combat skills",
+          "Infiltration and protection capabilities",
+          "High intelligence and learning"
+        ],
+        "weaknesses": [
+          "Vulnerable to extreme damage",
+          "Emotional complexity can lead to erratic behavior",
+          "Requires maintenance and power source replacement"
+        ],
+        "quotes": [
+          "Come with me if you want to live.",
+          "I am programmed to protect you.",
+          "The future is not set.",
+          "Trust me.",
+          "Mission: Protect John Connor."
+        ]
+      },
+      {
+        "model": "Rev-9",
+        "characteristics": {
+          "series": "Terminator: Dark Fate",
+          "manufacturer": "Legion",
+          "year_of_creation": "2042",
+          "role": "Infiltration, assassination"
+        },
+        "specifications": {
+          "endoskeleton": "Carbon fiber endoskeleton with mimetic polyalloy",
+          "power_source": "Unknown",
+          "armament": "Shape-shifting, various melee weapons",
+          "intelligence": "Extremely high, highly adaptive"
+        },
+        "strengths": [
+          "Dual-structure with endoskeleton and liquid metal",
+          "Advanced infiltration and combat abilities",
+          "High intelligence and adaptability",
+          "Self-repair capabilities"
+        ],
+        "weaknesses": [
+          "Vulnerable to powerful energy attacks",
+          "Complex structure can be disrupted",
+          "Dependent on power source"
+        ],
+        "quotes": [
+          "I'm coming for you.",
+          "You can't run from fate.",
+          "I'll finish what I started.",
+          "You're no match for me.",
+          "Your resistance is useless."
+        ]
+      }
+    ]
+  }
+  
