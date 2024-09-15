@@ -6,6 +6,8 @@ import (
 	"os"
 
 	"github.com/parakeet-nest/gollama"
+	"github.com/parakeet-nest/gollama/enums/option"
+
 )
 
 func main() {
@@ -20,10 +22,10 @@ func main() {
 	userContent := `What is your name? How can you save the world?`
 
 
-	options := o.Options{
-		Temperature: 0.5, // default (0.8)
-		RepeatLastN: 2,   // default (64) the default value will "freeze" deepseek-coder
-	}
+	options := gollama.SetOptions(map[string]interface{}{
+		option.Temperature: 0.5,
+		option.RepeatLastN: 2,
+	})
 
 	query := gollama.Query{
 		Model: model,

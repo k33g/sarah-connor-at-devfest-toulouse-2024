@@ -8,6 +8,8 @@ import (
 	"strconv"
 
 	"github.com/parakeet-nest/gollama"
+	"github.com/parakeet-nest/gollama/enums/option"
+
 )
 
 func main() {
@@ -24,12 +26,12 @@ func main() {
 	topK, _ := strconv.Atoi(os.Getenv("TOP_K"))
 	topP, _ := strconv.ParseFloat(os.Getenv("TOP_P"), 64)
 
-	options := gollama.Options{
-		Temperature: temperature, // default (0.8)
-		RepeatLastN: repeatLastN, // default (64) the default value will "freeze" deepseek-coder
-		TopK:        topK,
-		TopP:        topP,
-	}
+	options := gollama.SetOptions(map[string]interface{}{
+		option.Temperature: temperature,
+		option.RepeatLastN: repeatLastN,
+		option.TopK:        topK,
+		option.TopP:        topP,
+	})
 
 	query := gollama.Query{
 		Model: model,

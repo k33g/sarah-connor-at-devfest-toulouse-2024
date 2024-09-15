@@ -6,3 +6,5 @@ github.com/parakeet-nest/gollama v0.0.2 h1:Haa7B9LqQlZp2gfI+aEU4a1si9ZLFKPGJSO40
 github.com/parakeet-nest/gollama v0.0.2/go.mod h1:vbUYQYK+A51hkab5fxwbLFsuCIDl1bue8lZcGmApkcU=
 github.com/parakeet-nest/gollama v0.0.5 h1:jxRg2dwOFcwXRhPLgvibRlpqpoXZca/wvYiqEzHcWTQ=
 github.com/parakeet-nest/gollama v0.0.5/go.mod h1:vbUYQYK+A51hkab5fxwbLFsuCIDl1bue8lZcGmApkcU=
+github.com/parakeet-nest/gollama v0.0.6 h1:oZ+dKqwJM7RxbRN6mnUXctSm3LmH5UYpQEr4v9VZgQo=
+github.com/parakeet-nest/gollama v0.0.6/go.mod h1:vbUYQYK+A51hkab5fxwbLFsuCIDl1bue8lZcGmApkcU=
