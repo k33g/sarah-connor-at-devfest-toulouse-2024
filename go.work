@@ -1,12 +1,10 @@
-go 1.22.1
+go 1.23.1
 
-use(
-
-    sarah-connor/01-birth
-    sarah-connor/02-personality
-    sarah-connor/03-memory
-    sarah-connor/04-selective-memory
-    sarah-connor/05-function-calling
-    sarah-connor/06-terminator-detector
-
+use (
+	01-birth
+	02-personality
+	03-memory
+	04-more-data
+	05-more-data-rag
+	99-experiments
 )

@@ -1,0 +1,41 @@
+{
+	"name": "🤖 Sarah Connor?",
+
+	"dockerComposeFile": "compose.yml",
+	"service": "ai-workspace",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"golang.go",
+				"vallyscode.crayons",
+				"ms-azuretools.vscode-docker",
+				"pkief.material-icon-theme",
+				"pkief.material-product-icons",
+				"aaron-bond.better-comments",
+				"equinusocio.vsc-material-theme",
+				"vallyscode.crayons",
+				"irongeek.vscode-env",
+				"hediet.vscode-drawio"
+			]
+		}
+	},
+    "remoteEnv": {
+		//"OLLAMA_HOST": "http://host.docker.internal:11434"
+		//"OLLAMA_HOST": "http://ollama-service:11434"
+    },
+
+	// "features": {},
+	// "forwardPorts": [],
+
+	// Uncomment the next line if you want start specific services in your Docker Compose config.
+	// "runServices": [],
+
+	// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
+	// "shutdownAction": "none",
+
+	// Run commands after the container is created.
+	"postCreateCommand": "./.devcontainer/postCreateCommand.sh"
+}
+

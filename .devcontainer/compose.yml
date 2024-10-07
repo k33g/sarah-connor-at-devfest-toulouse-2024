@@ -1,0 +1,37 @@
+services:
+
+  ai-workspace:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      platforms:
+        - "linux/arm64"
+      args:
+        - GO_VERSION=1.23.1
+        - TINYGO_VERSION=0.33.0
+        - NODE_MAJOR=22
+        - EXTISM_VERSION=1.5.2
+        - USER_NAME=sarah_connor
+    volumes:
+      - ../..:/workspaces:cached      
+    command: sleep infinity
+    #environment:
+    #  - USER_NAME=sarah_connor
+
+
+
+  download-nemotron-mini:
+    image: curlimages/curl:8.6.0
+    entrypoint: ["curl", "host.docker.internal:11434/api/pull", "-d", "{\"name\": \"nemotron-mini\"}"]
+
+  download-qwen2.5-1.5b:
+    image: curlimages/curl:8.6.0
+    entrypoint: ["curl", "host.docker.internal:11434/api/pull", "-d", "{\"name\": \"qwen2.5:1.5b\"}"]
+
+  download-qwen2.5-0.5b:
+    image: curlimages/curl:8.6.0
+    entrypoint: ["curl", "host.docker.internal:11434/api/pull", "-d", "{\"name\": \"qwen2.5:0.5b\"}"]
+
+
+
+  # TODO: download the other LLMs

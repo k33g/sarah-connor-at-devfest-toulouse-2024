@@ -1,0 +1,7 @@
+{
+    "temperature": 0.0,
+    "repeat_last_n": 2,
+    "repeat_penalty": 1.8,
+    "top_k": 10,
+    "top_p": 0.5
+}

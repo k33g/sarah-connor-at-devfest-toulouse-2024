@@ -1,10 +1,15 @@
 {
     "recommendations": [
+      "ms-python.python",
+      "golang.go",
+      "vallyscode.crayons",
+      "ms-azuretools.vscode-docker",
       "pkief.material-icon-theme",
       "pkief.material-product-icons",
       "aaron-bond.better-comments",
       "equinusocio.vsc-material-theme",
       "vallyscode.crayons",
-      "irongeek.vscode-env"
+      "irongeek.vscode-env",
+      "hediet.vscode-drawio",
     ]
 }

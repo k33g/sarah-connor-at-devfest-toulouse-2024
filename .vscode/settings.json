@@ -1,8 +1,8 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Gitpod Light",
+    "workbench.colorTheme": "GitHub Light Default",
     "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.fontSize": 14,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "editor.detectIndentation": true,
@@ -22,8 +22,30 @@
             "other": "off"
         }
     },
-    "markdown.preview.fontSize": 30,
+    "markdown.preview.fontSize": 14,
     "workbench.editorAssociations": {
         "*.md": "vscode.markdown.preview.editor"
-    }
+    },
+    "[dockerfile]": {
+        "editor.fontSize": 14,
+    },
+    "[dockercompose]": {
+        "editor.fontSize": 14,
+    },
+    "[python]": {
+        "editor.fontSize": 14,
+
+    },
+    "[json]": {
+        "editor.fontSize": 14,
+
+    },
+    "[yaml]": {
+        "editor.fontSize": 14,
+
+    },
+    "[go]": {
+        "editor.fontSize": 14,
+    },
+    "python.defaultInterpreterPath": "~/.venv/bin/python"
 }
