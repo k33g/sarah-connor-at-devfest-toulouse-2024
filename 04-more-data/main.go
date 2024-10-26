@@ -1,13 +1,14 @@
 package main
 
 import (
-	"03-memory/ui"
+	"04-more-data/ui"
 	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"log"
 	"os"
+	"time"
 
 	"github.com/joho/godotenv"
 	"github.com/ollama/ollama/api"
@@ -15,8 +16,13 @@ import (
 
 func main() {
 
-	//brain := "v5"
-	brain := "v6"
+	brain := ""
+	if len(os.Args) < 2 {
+		// default brain
+		brain = "v5"
+	} else {
+		brain = os.Args[1]
+	}
 
 	ctx := context.Background()
 	errEnv := godotenv.Load(fmt.Sprintf("./data/brain-%s/.env", brain))
@@ -60,7 +66,7 @@ func main() {
 		if question == "bye" {
 			break
 		}
-		
+
 		// Prompt construction
 		messages := []api.Message{
 			{Role: "system", Content: systemInstructions},
@@ -79,9 +85,30 @@ func main() {
 			Options:  config,
 		}
 
+		// Start the counter goroutine
+		done := make(chan struct{})
+		go func() {
+			counter := 0
+			for {
+				select {
+				case <-done:
+					return
+				default:
+					counter++
+					fmt.Printf("\r⏳ Computing... %d seconds", counter)
+					time.Sleep(1 * time.Second)
+				}
+			}
+		}()
+
 		answer := ""
 
 		respFunc := func(resp api.ChatResponse) error {
+			if answer == "" {
+				fmt.Println(" ✅")
+				fmt.Println()
+				close(done)
+			}
 			fmt.Print(resp.Message.Content)
 			answer += resp.Message.Content
 			return nil

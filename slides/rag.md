@@ -1,3 +1,0 @@
-# RAG
-
-faire un schéma

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"01-birth/ui"
+	"01-birth/ui" // tools
 	"context"
 	"errors"
 	"fmt"
@@ -13,6 +13,7 @@ import (
 )
 
 func main() {
+	
 	ctx := context.Background()
 	errEnv := godotenv.Load()
 
@@ -66,12 +67,10 @@ func main() {
 	/*
 		- who are you?
 		- who is Sarah Connor?
-		- who is Sarah Connor in Terminator?
+		- who is Sarah Connor in The Terminator?
 		- who is John Connor for you?
 		- who is John Connor in Terminator?
 		- give the list of all the terminators models
 		- what is skynet?
-
-
 	*/
 }

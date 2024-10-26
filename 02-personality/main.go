@@ -17,7 +17,15 @@ func main() {
 	//brain := "v1"
 	//brain := "v2"
 	//brain := "v3"
-	brain := "v4"
+	//brain := "v4"
+
+	brain := ""
+	if len(os.Args) < 2 {
+		// default brain
+		brain = "v1"
+	} else {
+		brain = os.Args[1]
+	}
 
 	ctx := context.Background()
 	errEnv := godotenv.Load(fmt.Sprintf("./data/brain-%s/.env", brain))

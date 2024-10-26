@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 320 220">
+    <!-- Grille de fond -->
+    <defs>
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#eee" stroke-width="0.5"/>
+        </pattern>
+    </defs>
+    <rect width="320" height="220" fill="url(#grid)" x="-10" y="-10"/>
+
+    <!-- Axes -->
+    <line x1="0" y1="200" x2="0" y2="0" stroke="black" stroke-width="1"/>
+    <line x1="0" y1="200" x2="300" y2="200" stroke="black" stroke-width="1"/>
+    
+    <!-- Vecteur A -->
+    <line x1="0" y1="200" x2="150" y2="150" stroke="blue" stroke-width="2"/>
+    <text x="155" y="145" fill="blue">A</text>
+    
+    <!-- Vecteur B -->
+    <line x1="0" y1="200" x2="150" y2="20" stroke="red" stroke-width="2"/>
+    <text x="155" y="15" fill="red">B</text>
+    
+    <!-- Arc pour l'angle θ -->
+    <path d="M 60,200 A 60,60 0 0,1 15,145" fill="none" stroke="green" stroke-width="1"/>
+    <text x="45" y="165" fill="green">θ</text>
+    
+    <!-- Formule -->
+    <text x="10" y="5" font-family="sans-serif" font-style="italic" font-size="10">
+        cos(θ) = A·B / (||A|| × ||B||)
+    </text>
+    
+    <!-- Légende -->
+    <g transform="translate(180, 20)">
+        <line x1="0" y1="20" x2="20" y2="20" stroke="blue" stroke-width="2"/>
+        <text x="25" y="25" font-size="10" font-family="sans-serif">Vecteur A</text>
+        <line x1="0" y1="40" x2="20" y2="40" stroke="red" stroke-width="2"/>
+        <text x="25" y="45" font-size="10" font-family="sans-serif">Vecteur B</text>
+        <path d="M 0,60 A 10,10 0 0,1 7,70" fill="none" stroke="green"/>
+        <text x="25" y="65" font-size="10" font-family="sans-serif">Angle θ</text>
+    </g>
+</svg>

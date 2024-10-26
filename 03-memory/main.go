@@ -15,7 +15,14 @@ import (
 
 func main() {
 
-	brain := "v4"
+	brain := ""
+	if len(os.Args) < 2 {
+		// default brain
+		brain = "v4"
+	} else {
+		brain = os.Args[1]
+	}
+
 
 	ctx := context.Background()
 	errEnv := godotenv.Load(fmt.Sprintf("./data/brain-%s/.env", brain))
@@ -45,6 +52,7 @@ func main() {
 
 	ui.Println("#FFFF00", "📝 config:", config)
 
+	// 🧠 Conversational memory
 	memory := []api.Message{}
 
 	for {
@@ -58,9 +66,8 @@ func main() {
 		messages := []api.Message{
 			{Role: "system", Content: systemInstructions},
 			{Role: "system", Content: personality},
-			//{Role: "user", Content: question},
 		}
-		// Add memory
+		// 👋 🧠 Add memory
 		messages = append(messages, memory...)
 		// Add the new question
 		messages = append(messages, api.Message{Role: "user", Content: question})
@@ -81,12 +88,20 @@ func main() {
 
 		err := client.Chat(ctx, req, respFunc)
 
-		// Save the conversation in memory
+		// 👋 🧠 Save the conversation in memory
+		// Add the answer from the 🤖 agent to the memory
+		
+		memory = []api.Message{
+			{Role: "user", Content: question},
+			{Role: "assistant", Content: answer},
+		}
+		/*
 		memory = append(
 			memory,
 			api.Message{Role: "user", Content: question},
 			api.Message{Role: "assistant", Content: answer},
 		)
+		*/
 
 		if err != nil {
 			log.Fatal("😡:", err)

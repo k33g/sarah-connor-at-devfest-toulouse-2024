@@ -7,7 +7,6 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-python.python",
 				"golang.go",
 				"vallyscode.crayons",
 				"ms-azuretools.vscode-docker",
@@ -17,25 +16,25 @@
 				"equinusocio.vsc-material-theme",
 				"vallyscode.crayons",
 				"irongeek.vscode-env",
-				"hediet.vscode-drawio"
+				"hediet.vscode-drawio",
+				"bierner.markdown-mermaid"
 			]
 		}
 	},
-    "remoteEnv": {
-		//"OLLAMA_HOST": "http://host.docker.internal:11434"
-		//"OLLAMA_HOST": "http://ollama-service:11434"
-    },
-
-	// "features": {},
-	// "forwardPorts": [],
-
-	// Uncomment the next line if you want start specific services in your Docker Compose config.
-	// "runServices": [],
-
-	// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
-	// "shutdownAction": "none",
-
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {
+		  "version": "latest"
+		}
+	},
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached",
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/${localEnv:USER}/.ssh,type=bind,consistency=cached",
+		//"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+	],
 	// Run commands after the container is created.
-	"postCreateCommand": "./.devcontainer/postCreateCommand.sh"
+	//"postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+	"postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+	"remoteUser": "${localEnv:USER}"
+
 }
 

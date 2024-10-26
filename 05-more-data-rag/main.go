@@ -1,15 +1,15 @@
 package main
 
 import (
-	"03-memory/ui"
 	"05-more-data-rag/rag"
-	"05-more-data-rag/txt"
+	"05-more-data-rag/ui"
 	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"log"
 	"os"
+	"time"
 
 	"github.com/joho/godotenv"
 	"github.com/ollama/ollama/api"
@@ -17,8 +17,13 @@ import (
 
 func main() {
 
-	//brain := "v7"
-	brain := "v8"
+	brain := ""
+	if len(os.Args) < 2 {
+		// default brain
+		brain = "v6"
+	} else {
+		brain = os.Args[1]
+	}
 
 	ctx := context.Background()
 	errEnv := godotenv.Load(fmt.Sprintf("./data/brain-%s/.env", brain))
@@ -38,57 +43,45 @@ func main() {
 	personality := string(personalityFile)
 
 	// 🖐️🤖 all data about the terminators
-	terminatorsDataFile, errTerm := os.ReadFile(fmt.Sprintf("./data/brain-%s/terminators.data.md", brain))
-	terminatorsData := string(terminatorsDataFile)
-
-	// RAG section
-	store := rag.MemoryVectorStore{
-		Records: make(map[string]rag.VectorRecord),
-	}
-	// Split the data
-	chunks := txt.SplitTextWithDelimiter(terminatorsData, "<!-- SPLIT -->")
-
-	for index, chunk := range chunks {
-		ui.Println("#FFFF00", "chunk nb", index, ":")
-		ui.Println("#FF06FF", chunk)
-
-		req := &api.EmbeddingRequest{
-			Model:  embeddingModel,
-			Prompt: chunk,
-		}
-		resp, errEmb := client.Embeddings(ctx, req)
-		if errEmb != nil {
-			fmt.Println("😡:", errEmb)
-		}
-		//ui.Println("#FF061C", "📦", resp.Embedding)
-		
-		record, errSave := store.Save(rag.VectorRecord{
-			Prompt: chunk,
-			Embedding: resp.Embedding,
-		})
-		if errSave != nil {
-			fmt.Println("😡:", errSave)
-		}
-		ui.Println("#FF061C", "📦", record.Embedding)
-
-
-	}
+	//terminatorsDataFile, errTerm := os.ReadFile(fmt.Sprintf("./data/brain-%s/terminators.data.md", brain))
+	//terminatorsData := string(terminatorsDataFile)
 
 	// Configuration
 	configFile, errConf := os.ReadFile(fmt.Sprintf("./data/brain-%s/options.json", brain))
 	var config map[string]interface{}
 	errJsonConf := json.Unmarshal(configFile, &config)
 
-	errorsList := errors.Join(errEnv, errCli, errInst, errPers, errTerm, errConf, errJsonConf)
+	errorsList := errors.Join(errEnv, errCli, errInst, errPers, errConf, errJsonConf)
 	if errorsList != nil {
 		log.Fatal("😡:", errorsList)
 	}
+
+	// RAG section
+	store := rag.MemoryVectorStore{
+		Records: make(map[string]rag.VectorRecord),
+	}
+
+	// Unmarshal the store from a JSON file if it exists
+	storeFile := "store.json"
+	if _, err := os.Stat(storeFile); err == nil {
+		file, err := os.ReadFile(storeFile)
+		if err != nil {
+			log.Fatal("Failed to read store file:", err)
+		}
+		if err := json.Unmarshal(file, &store); err != nil {
+			log.Fatal("Failed to unmarshal store:", err)
+		}
+	}
+
+	// Preload the model and data before starting the conversation
+	//tools.PreloadModel(ctx, ollamaUrl, client, config, model, systemInstructions, personality)
 
 	ui.Println("#FFFF00", "📝 config:", config)
 
 	memory := []api.Message{}
 
 	for {
+
 		question, _ := ui.Input("#008000", fmt.Sprintf("🤖 [%s] 🧠 (%s) ask me something> ", model, brain))
 
 		if question == "bye" {
@@ -105,7 +98,7 @@ func main() {
 			fmt.Println("😡:", errEmb)
 		}
 		embeddingFromQuestion := rag.VectorRecord{
-			Prompt: question,
+			Prompt:    question,
 			Embedding: resp.Embedding,
 		}
 		similarities, _ := store.SearchTopNSimilarities(embeddingFromQuestion, 0.5, 2)
@@ -120,12 +113,11 @@ func main() {
 
 		ui.Println("#FFFF00", "📝 similarities:", documentsContent)
 
-
 		// Prompt construction
 		messages := []api.Message{
 			{Role: "system", Content: systemInstructions},
 			{Role: "system", Content: personality},
-			{Role: "system", Content: "TERMINATORS_DATA:\n"+documentsContent},
+			{Role: "system", Content: "TERMINATORS_DATA:\n" + documentsContent},
 			//{Role: "user", Content: question},
 		}
 		// Add memory
@@ -138,16 +130,38 @@ func main() {
 			Messages: messages,
 			Options:  config,
 		}
-
+		
+		// Start the counter goroutine
+		done := make(chan struct{})
+		go func() {
+			counter := 0
+			for {
+				select {
+				case <-done:
+					return
+				default:
+					counter++
+					fmt.Printf("\r⏳ Computing... %d seconds", counter)
+					time.Sleep(1 * time.Second)
+				}
+			}
+		}()
+		
 		answer := ""
 
 		respFunc := func(resp api.ChatResponse) error {
+			if answer == "" {
+				fmt.Println(" ✅")
+				fmt.Println()
+				close(done)
+			}
 			fmt.Print(resp.Message.Content)
 			answer += resp.Message.Content
 			return nil
 		}
 
 		err := client.Chat(ctx, req, respFunc)
+
 
 		// Save the conversation in memory
 		memory = append(
@@ -159,6 +173,10 @@ func main() {
 		if err != nil {
 			log.Fatal("😡:", err)
 		}
+
+
+		
+
 		fmt.Println()
 		fmt.Println()
 
