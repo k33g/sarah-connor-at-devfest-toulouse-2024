@@ -4,6 +4,10 @@
 
 🥰 Il est donc possible de faire de la **"GenAI"** sans **`GPU`**.
 
+## Small Language Models
+
+https://www.thoughtworks.com/radar/techniques/summary/small-language-models
+
 ## 🖐️ Questions ?
 
 ## 🙏 Feedback
