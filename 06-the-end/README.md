@@ -1,5 +1,7 @@
 # 🎉 That's all folks!
 
+<img src="sarah-connor-young-with-terminators.jpg" width="50%" height="50%">
+
 🥰 Il est donc possible de faire de la **"GenAI"** sans **`GPU`**.
 
 ## 🖐️ Questions ?

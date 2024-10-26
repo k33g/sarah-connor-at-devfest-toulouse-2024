@@ -1,6 +1,5 @@
 {
     "recommendations": [
-      "ms-python.python",
       "golang.go",
       "vallyscode.crayons",
       "ms-azuretools.vscode-docker",
