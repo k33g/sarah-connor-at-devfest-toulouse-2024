@@ -2,6 +2,8 @@
 
 <img src="imgs/male-borg.jpg" width="50%" height="50%">
 
+### `Génération de texte ✅ mais 🐣`
+
 ## Chat completion avec Qwen 2.5
 
 <img src="imgs/qwen.png" width="50%" height="50%">
@@ -9,7 +11,7 @@
 ```
 # Chat completion
 qwen2.5:1.5b    986 MB
-qwen2.5:0.5b    397 MB
+qwen2.5:0.5b    397 MB 🥰
 ```
 
 - https://ollama.com/library/qwen2.5
@@ -21,7 +23,7 @@ qwen2.5:0.5b    397 MB
 
 ```
 # Embeddings
-mxbai-embed-large:latest    669 MB
+mxbai-embed-large:latest    669 MB 🥰
 all-minilm:22m               45 MB
 ```
 

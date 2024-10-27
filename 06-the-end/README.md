@@ -4,6 +4,11 @@
 
 🥰 Il est donc possible de faire de la **"GenAI"** sans **`GPU`**.
 
+## Améliorations possibles
+
+- Gestion de la mémoire conversationnelle: combiner avec le RAG et ne garder que les N derniers échanges
+- RAG: Embeddings contextuels
+
 ## Small Language Models
 
 https://www.thoughtworks.com/radar/techniques/summary/small-language-models
