@@ -30,5 +30,10 @@ all-minilm:22m               45 MB
 - https://ollama.com/library/all-minilm
 - https://ollama.com/library/mxbai-embed-large
 
+## 🦙 Ollama SLMs: liste
+
+- https://parakeet-nest.github.io/awesome-slms/index.html
+- https://parakeet-nest.github.io/awesome-slms/benchmarks.html
+
 ___
 [◀️ Previous](./06-goals.md#-objectifs-de-cette-présentation) | [Next: 🦙 Ollama ▶️](./08-ollama.md#ollama-)

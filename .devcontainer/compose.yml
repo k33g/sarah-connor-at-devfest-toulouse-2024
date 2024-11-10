@@ -19,6 +19,10 @@ services:
     #environment:
     #  - USER_NAME=sarah_connor
 
+  ollama-service:
+    build:
+      context: .
+      dockerfile: ollama.Dockerfile
 
 
   #download-nemotron-mini:

@@ -1,4 +1,4 @@
-module 07-one-more-thing
+module 06-one-more-thing
 
 go 1.22.5
 

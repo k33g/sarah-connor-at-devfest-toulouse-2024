@@ -18,5 +18,7 @@
 ### ⏺ LLM
 
 > Un LLM (Large Language Model) est un modèle d'intelligence artificielle entraîné sur d'immenses quantités de données textuelles (*), capable de comprendre et de générer du langage naturel de manière contextuelle et cohérente. - *Claude.ai*
+
+### ⏺ Petite dissonance cognitive
 ___
 [◀️ Previous](./05-terminator_1.md#résumé-de-terminator-1) | [Next: SLMs ▶️](./07-slms.md#small-language-models)

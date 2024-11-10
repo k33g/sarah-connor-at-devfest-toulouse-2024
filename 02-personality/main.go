@@ -17,12 +17,11 @@ func main() {
 	//brain := "v1"
 	//brain := "v2"
 	//brain := "v3"
-	//brain := "v4"
 
 	brain := ""
 	if len(os.Args) < 2 {
 		// default brain
-		brain = "v1"
+		brain = "v3"
 	} else {
 		brain = os.Args[1]
 	}
@@ -44,7 +43,7 @@ func main() {
 	personality := string(personalityFile)
 
 	// Configuration
-	configFile, errConf := os.ReadFile(fmt.Sprintf("./data/brain-%s/options.json", brain))
+	configFile, errConf := os.ReadFile(fmt.Sprintf("./data/brain-%s/settings.json", brain))
 	var config map[string]interface{}
 	errJsonConf := json.Unmarshal(configFile, &config)
 

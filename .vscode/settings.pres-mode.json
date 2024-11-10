@@ -47,5 +47,18 @@
     "[go]": {
         "editor.fontSize": 18,
     },
+    "[plaintext]": {
+        "editor.fontSize": 18,
+
+    },
+    "[jsonc]": {
+        "editor.fontSize": 18,
+    },
+    "[jsonl]": {
+        "editor.fontSize": 18,
+    },
+    "[javascript]": {
+        "editor.fontSize": 18,
+    },
     "python.defaultInterpreterPath": "~/.venv/bin/python"
 }

@@ -11,9 +11,18 @@
 
 ## Small Language Models
 
-https://www.thoughtworks.com/radar/techniques/summary/small-language-models
+- https://www.thoughtworks.com/radar/techniques/summary/small-language-models
+- https://parakeet-nest.github.io/awesome-slms/
 
-## 🖐️ Questions ?
+> 👋 ne jetez pas vos Pi4 🤓
+
+## 📚 Ressources
+
+Suivez **Matt Williams** https://www.youtube.com/@technovangelist
+
+## 🏰 Prochain Side Project : un JDR TXT >> Workshop au SnowCamp
+
+# 🖐️ Questions ?
 
 ## 🙏 Feedback
 

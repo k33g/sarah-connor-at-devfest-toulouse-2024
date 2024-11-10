@@ -1,8 +1,8 @@
 package main
 
 import (
-	"07-one-more-thing/flock"
-	"07-one-more-thing/ui"
+	"06-one-more-thing/flock"
+	"06-one-more-thing/ui"
 	"context"
 	"encoding/json"
 	"errors"
@@ -44,7 +44,7 @@ func GetSarahInformation() (api.Client, string, string, map[string]interface{}, 
 	systemInstructions := string(systemInstructionsFile)
 
 	// Configuration
-	configFile, errConf := os.ReadFile("./data/brain-sarah/options.json")
+	configFile, errConf := os.ReadFile("./data/brain-sarah/settings.json")
 	var config map[string]interface{}
 	errJsonConf := json.Unmarshal(configFile, &config)
 
@@ -70,7 +70,7 @@ func GetTerminatorInformation() (api.Client, string, string, map[string]interfac
 	systemInstructions := string(systemInstructionsFile)
 
 	// Configuration
-	configFile, errConf := os.ReadFile("./data/brain-terminator/options.json")
+	configFile, errConf := os.ReadFile("./data/brain-terminator/settings.json")
 	var config map[string]interface{}
 	errJsonConf := json.Unmarshal(configFile, &config)
 

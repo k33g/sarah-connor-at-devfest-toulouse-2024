@@ -45,7 +45,7 @@ func main() {
 	terminatorsData := string(terminatorsDataFile)
 
 	// Configuration
-	configFile, errConf := os.ReadFile(fmt.Sprintf("./data/brain-%s/options.json", brain))
+	configFile, errConf := os.ReadFile(fmt.Sprintf("./data/brain-%s/settings.json", brain))
 	var config map[string]interface{}
 	errJsonConf := json.Unmarshal(configFile, &config)
 

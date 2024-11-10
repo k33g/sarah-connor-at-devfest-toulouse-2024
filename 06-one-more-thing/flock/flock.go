@@ -7,10 +7,6 @@ import (
 	"github.com/ollama/ollama/api"
 )
 
-type Monster struct {
-	Name string
-}
-
 type AgentFunction func() interface{}
 
 // InstructionFunc represents a function that takes context variables and returns a string

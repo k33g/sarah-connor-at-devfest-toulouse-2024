@@ -3,7 +3,7 @@
 - Génération de contenu
 - LLMs
 - Aujourd'hui: 📝 création de texte
-
+- Sondage ? 🙋‍♀️🙋🏻‍♂️
 
 
 ___

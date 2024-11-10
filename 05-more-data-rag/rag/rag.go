@@ -10,10 +10,6 @@ type VectorRecord struct {
 	Embedding      []float64 `json:"embedding"`
 	CosineDistance float64
 
-	//Score          float64 // ElasticSearch
-	//Reference string `json:"reference"`
-	//MetaData  string `json:"metaData"`
-	//Text      string `json:"text"`
 }
 
 type MemoryVectorStore struct {

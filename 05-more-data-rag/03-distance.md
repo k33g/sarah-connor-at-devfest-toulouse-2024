@@ -11,7 +11,7 @@
 
 <img src="imgs/cosine.svg" width="50%" height="50%">
 
-## Générer les embeddings
+## Chunks + Générer les embeddings
 ```bash
 go test 
 ```
