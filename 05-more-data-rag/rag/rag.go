@@ -8,7 +8,7 @@ type VectorRecord struct {
 	Id             string    `json:"id"`
 	Prompt         string    `json:"prompt"`
 	Embedding      []float64 `json:"embedding"`
-	CosineDistance float64
+	CosineSimilarity float64
 
 }
 
@@ -50,9 +50,9 @@ func (mvs *MemoryVectorStore) SearchSimilarities(embeddingFromQuestion VectorRec
 	var records []VectorRecord
 
 	for _, v := range mvs.Records {
-		distance := CosineDistance(embeddingFromQuestion.Embedding, v.Embedding)
+		distance := CosineSimilarity(embeddingFromQuestion.Embedding, v.Embedding)
 		if distance >= limit {
-			v.CosineDistance = distance
+			v.CosineSimilarity = distance
 			records = append(records, v)
 		}
 	}
