@@ -3,7 +3,6 @@ package rag
 import (
 	"math"
 	"sort"
-
 )
 
 func dotProduct(v1 []float64, v2 []float64) float64 {
@@ -32,7 +31,7 @@ func CosineSimilarity(v1, v2 []float64) float64 {
 func GetTopNVectorRecords(records []VectorRecord, max int) []VectorRecord {
 	// Sort the records slice in descending order based on CosineDistance
 	sort.Slice(records, func(i, j int) bool {
-		return records[i].CosineDistance > records[j].CosineDistance
+		return records[i].CosineSimilarity > records[j].CosineSimilarity
 	})
 
 	// Return the first max records or all if less than three
